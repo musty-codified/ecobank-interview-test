@@ -25,6 +25,8 @@ public class TransferController {
         this.accService = accService;
     }
 
+
+    @PostMapping("/transfers")
     public ResponseEntity<?> processTransfer(@RequestBody @Validated TransferDto transferDto){
 
         // validate account
