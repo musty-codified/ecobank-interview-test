@@ -2,7 +2,9 @@ package com.ecobank.ecobank.services.impl;
 
 import com.ecobank.ecobank.dto.TransferDto;
 import com.ecobank.ecobank.services.AccountService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AccountServiceImpl implements AccountService {
     @Override
     public void validateAccount(TransferDto request) {
